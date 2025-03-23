@@ -4,37 +4,45 @@
 
 name: 'MachineDetails'
 description: 'Provides machine details for macOS (only)'
-author: '(plroebuck)'
+author: 'P. Roebuck (plroebuck)'
 
 ## Controls when the action will run
 on:
   workflow_call:
 
-## Default Values
-defaults:
-  run:
-    shell: bash
-
 ## Options
 inputs:
-  hardware_only:
+  show_hardware:
     description: |
       Display only hardware information [true,false]
-      Default is `false`.
-    default: 'false'
+      Default is `true`.
+    default: 'true'
     required: false
-  software_only:
+  show_software:
     description: |
       Display only software information [true,false]
-      Default is `false`.
-    default: 'false'
+      Default is `true`.
+    default: 'true'
+    required: false
+  show_environment:
+    description: |
+      Displays environment information [true,false]
+      Default is `true`.
+    default: 'true'
     required: false
 
+## Execute
 runs:
   using: 'composite'
   steps:
     - run: $GITHUB_ACTION_PATH/script.sh
       shell: bash
       env:
-        INPUT_HARDWARE_ONLY: ${{ inputs.hardware_only }}
-        INPUT_SOFTWARE_ONLY: ${{ inputs.software_only }}
+        INPUT_SHOW_HARDWARE:    ${{ inputs.show_hardware }}
+        INPUT_SHOW_SOFTWARE:    ${{ inputs.show_software }}
+        INPUT_SHOW_ENVIRONMENT: ${{ inputs.show_environment }}
+
+## Branding
+branding: 
+  icon: 'check-square’
+  color: 'green'
