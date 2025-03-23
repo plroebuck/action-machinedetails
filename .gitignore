@@ -1,5 +1,8 @@
 ###
-### .gitignore -- Specifies intentionally untracked files that Git should ignore.
+### .gitignore
+###
+### Specifies intentionally untracked files that Git should ignore when maing commits and
+### pushing to a repository, preventing unnecessary or sensitive data ffrom being tracked.
 ###
 
 ## macOS
@@ -11,4 +14,3 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
