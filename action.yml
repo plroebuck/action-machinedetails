@@ -1,0 +1,40 @@
+###
+### MachineDetails Action
+###
+
+name: 'MachineDetails'
+description: 'Provides machine details for macOS (only)'
+author: '(plroebuck)'
+
+## Controls when the action will run
+on:
+  workflow_call:
+
+## Default Values
+defaults:
+  run:
+    shell: bash
+
+## Options
+inputs:
+  hardware_only:
+    description: |
+      Display only hardware information [true,false]
+      Default is `false`.
+    default: 'false'
+    required: false
+  software_only:
+    description: |
+      Display only software information [true,false]
+      Default is `false`.
+    default: 'false'
+    required: false
+
+runs:
+  using: 'composite'
+  steps:
+    - run: $GITHUB_ACTION_PATH/script.sh
+      shell: bash
+      env:
+        INPUT_HARDWARE_ONLY: ${{ inputs.hardware_only }}
+        INPUT_SOFTWARE_ONLY: ${{ inputs.software_only }}
