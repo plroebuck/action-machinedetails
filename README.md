@@ -7,7 +7,7 @@ Displays basic machine information for macOS
 
 Optional. Displays basic hardware information [true, false]
 
-### `show_hardware`
+### `show_software`
 
 Optional. Displays basic software information [true, false]
 
