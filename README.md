@@ -30,3 +30,17 @@ jobs:
         show_software: true      # optional
         show_environmen: true    # optional
 ```
+
+## Copyright
+
+Copyright © 2025 P. Roebuck. All rights reserved.
+
+## License
+
+This software is licensed under the [MIT][] License, see COPYING for details.
+
+
+[//]: # (Cross reference section)
+
+[MIT]: https://opensource.org/license/mit
+
