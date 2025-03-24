@@ -166,7 +166,7 @@ GetHardwareInfo() {
 } 
           
 ##-----------------------------------------------------------------------------
-GetSoftareInfo() {
+GetSoftwareInfo() {
   declare prodname
   declare prodvers
   declare build
