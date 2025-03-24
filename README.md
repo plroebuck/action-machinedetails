@@ -37,7 +37,7 @@ Copyright © 2025 P. Roebuck. All rights reserved.
 
 ## License
 
-This software is licensed under the [MIT][] License, see COPYING for details.
+This software is licensed under the [MIT][] License.
 
 
 [//]: # (Cross reference section)
