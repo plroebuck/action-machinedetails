@@ -25,7 +25,7 @@ declare -ir EXIT_FAILURE=1
 declare -r pkgdesc="GitHub Workflow action"
 declare -r pkgname="action"
 declare -r scriptname="$( basename ${0%.*} )"
-declare -r version="0.1.0"           # major.minor.bug
+declare -r version="0.2.1"           # major.minor.bug
 
 
 ##
