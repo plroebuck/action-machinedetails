@@ -24,7 +24,7 @@ jobs:
 
   steps:
     - name: Grab machine details
-      uses: plroebuck/action-machinedetails@v1
+      uses: plroebuck/machinedetails-action@v1
       with:
         show_hardware: true      # optional
         show_software: true      # optional
