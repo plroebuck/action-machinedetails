@@ -44,5 +44,5 @@ runs:
 
 ## Branding
 branding: 
-  icon: 'check-square’
-  color: 'green'
+  icon: 'server'
+  color: 'blue'
