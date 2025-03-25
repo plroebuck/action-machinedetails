@@ -35,7 +35,7 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - run: $GITHUB_ACTION_PATH/script.sh
+    - run: $GITHUB_ACTION_PATH/machinedetails.sh
       shell: bash
       env:
         INPUT_SHOW_HARDWARE:    ${{ inputs.show_hardware }}
